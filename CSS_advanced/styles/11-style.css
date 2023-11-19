@@ -22,8 +22,7 @@ a {
   color: #d73953;
   font-size: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
-font-weight: var(--font-weight-bold);
-
+  font-weight: var(--font-weight-bold);
 }
 :root {
   --color-primary: #d73953;
