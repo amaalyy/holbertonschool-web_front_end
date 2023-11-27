@@ -159,7 +159,7 @@ ul.row {
   list-style: none;
 }
 .row::after {
-  content: none;
+  content: "";
   display: table;
   clear: both;
 }
