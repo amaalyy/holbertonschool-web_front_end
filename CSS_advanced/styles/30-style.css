@@ -120,7 +120,7 @@ a:active {
   right: 0;
   left: 0;
   bottom: 0;
-  content: none;
+  content: "";
 }
 .card-title .card-work:hover {
   opacity: 1;
