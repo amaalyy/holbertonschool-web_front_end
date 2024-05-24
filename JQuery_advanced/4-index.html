@@ -9,15 +9,17 @@
     <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
 
     <script type="application/javascript">
-        // Check if jQuery is loaded correctly
-        if (typeof jQuery !== 'undefined') {
-            // jQuery is loaded, log to the console
-            console.log('jQuery has been loaded correctly');
-        } else {
-            // jQuery is not loaded properly, log to the console
-            console.log('jQuery has not been loaded correctly');
-        }
+    // Check if jQuery is loaded correctly
+    if (typeof jQuery !== 'undefined') {
+        // jQuery is loaded, log to the console
+        console.log('jQuery has been loaded correctly');
+    } else {
+        // jQuery is not loaded properly, log to the console
+        console.log('jQuery has not been loaded correctly');
+    }
 
+    // Use $(document).ready() to ensure the code runs after the document is fully loaded
+    $(document).ready(function () {
         // Define the createFamilyTree function
         function createFamilyTree() {
             // Append each element one by one to create the table
@@ -61,7 +63,9 @@
         // Call the createFamilyTree and replaceFamilyTree functions
         createFamilyTree();
         replaceFamilyTree();
-    </script>
+    });
+</script>
+
 </head>
 
 <body>
