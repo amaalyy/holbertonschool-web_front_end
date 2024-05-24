@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -18,38 +19,41 @@
             console.log('jQuery has not been loaded correctly');
         }
 
-        // Define the createFamilyTree function
-        function createFamilyTree() {
-            // Create a table element with the specified structure
-            var tableHTML = '<table border="1">' +
-                                '<thead>' +
-                                    '<tr>' +
-                                        '<th>Firstname</th>' +
-                                        '<th>Lastname</th>' +
-                                    '</tr>' +
-                                '</thead>' +
-                                '<tbody>' +
-                                    '<tr>' +
-                                        '<td>Guillaume</td>' +
-                                        '<td>Salva</td>' +
-                                    '</tr>' +
-                                    '<tr>' +
-                                        '<td>Paulette</td>' +
-                                        '<td>Salva</td>' +
-                                    '</tr>' +
-                                    '<tr>' +
-                                        '<td>Antoine</td>' +
-                                        '<td>Salva</td>' +
-                                    '</tr>' +
-                                '</tbody>' +
-                            '</table>';
+        // Use $(document).ready() to ensure the code runs after the document is fully loaded
+        $(document).ready(function () {
+            // Define the createFamilyTree function
+            function createFamilyTree() {
+                // Create a table element with the specified structure
+                var tableHTML = '<table border="1">' +
+                    '<thead>' +
+                    '<tr>' +
+                    '<th>Firstname</th>' +
+                    '<th>Lastname</th>' +
+                    '</tr>' +
+                    '</thead>' +
+                    '<tbody>' +
+                    '<tr>' +
+                    '<td>Guillaume</td>' +
+                    '<td>Salva</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>Paulette</td>' +
+                    '<td>Salva</td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>Antoine</td>' +
+                    '<td>Salva</td>' +
+                    '</tr>' +
+                    '</tbody>' +
+                    '</table>';
 
-            // Append the table to the body of the page
-            $('body').append(tableHTML);
-        }
+                // Append the table to the body of the page
+                $('body').append(tableHTML);
+            }
 
-        // Call the createFamilyTree function
-        createFamilyTree();
+            // Call the createFamilyTree function
+            createFamilyTree();
+        });
     </script>
 </head>
 
